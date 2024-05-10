@@ -25,7 +25,7 @@ In part 1, I was lucky and actually had Ubuntu set up from a previous course. Ho
 
 ## Apache Web Server Testing
 
-![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/e6096025-132f-4825-a13b-fa6a92ada904)
+[![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/e6096025-132f-4825-a13b-fa6a92ada904)](https://private-user-images.githubusercontent.com/169232307/329731245-e6096025-132f-4825-a13b-fa6a92ada904.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUzODE0MzIsIm5iZiI6MTcxNTM4MTEzMiwicGF0aCI6Ii8xNjkyMzIzMDcvMzI5NzMxMjQ1LWU2MDk2MDI1LTEzMmYtNDgyNS1hMTNiLWZhNmE5MmFkYTkwNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUxMFQyMjQ1MzJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMWE1ZjdkOGVkZjQ1MmJhMGM5NTc4MmVmYjBmMGIzYmFiZjIwNTM2NThjYWVjZmE4NTM1YTQwN2M2M2U0NDk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.lbzl2cCBg92Wcc7MUPP0gzKgRG-pl4f-SG9nGJPo3Uw)
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/1c3668fc-4c34-4486-a1f8-4dac2701325b)
 
 # Part II - git Repositories and Exercises
