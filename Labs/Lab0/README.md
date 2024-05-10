@@ -19,7 +19,7 @@ This lab is a set up lab designed to get everything install and working for the 
 
 Link to Lab 0: https://github.com/NajarZS/waph-najarzs/tree/main/Labs/Lab0
 
-## Part I - Ubuntu Virtual Machine & Software Installation
+# Part I - Ubuntu Virtual Machine & Software Installation
 
 In part 1, I was lucky and actually had Ubuntu set up from a previous course. However, I am grateful that the presentation included instructions on how to turn on bidirectional clipboards and how to set up a host network. After figuring that part out, I mostly just had to install the Apache Web Server, the net tools, and pandoc. I followed everything exactly as instructed and ran into no problems. 
 
@@ -28,12 +28,12 @@ In part 1, I was lucky and actually had Ubuntu set up from a previous course. Ho
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/e6096025-132f-4825-a13b-fa6a92ada904)
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/1c3668fc-4c34-4486-a1f8-4dac2701325b)
 
-## Part II - git Repositories and Exercises
+# Part II - git Repositories and Exercises
 
-# The course repository
+## The course repository
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ee8fb7c5-4c63-45c9-a0a1-2cb98d9c6612)
 
-# Private Repository 
+## Private Repository 
 
 Creating a repository on github was more diffucult for me than it should have because I actually have no proper experience with github. However, the instructions were very clear and straightforward. I made a new account linked to my school email then made a new repository as instructed. Making the SSH keys was simple using the exact commands that were given to me. The only issue was with the cloning. In the screenshot, you can see that it did not want to clone at first, so I had to go the internet to figure out how to fix it. It eventually worked perfectly. 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/b1c59f19-f34d-493c-9a00-2c7049951dff)
