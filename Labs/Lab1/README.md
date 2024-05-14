@@ -87,8 +87,7 @@ int main(void) {
     return 0;
 
 }
-
-
+```
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ecb90d8a-4a84-4248-89fe-25fa9c0c8a84)
 
 
