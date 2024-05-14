@@ -90,6 +90,49 @@ int main(void) {
 ```
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ecb90d8a-4a84-4248-89fe-25fa9c0c8a84)
 
+## Task 2. A simple PHP Web Application with user input.
+
+a.  Summarize and demonstrate with a screenshot that you have successfully developed a simple helloworld.php PHP page with your name and PHP configuration as guided in Lecture 3.
+I installed php and followed the instructions given in the lecture. I created a new file called helloworld.php and then configured it to show up on my browser as shown in the screenshot below. 
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/e9677779-7a2e-496f-aa38-0aad9b8deb6f)
+
+b. Demonstrate that you developed and deployed an echo Web application in PHP, e.g., echo.php with a screenshot with your name in the data.
+I created a new file called echo.php and deployed it the same as the previous file. I then made data equal my name. 
+
+Included file `echo.php`:
+
+```
+<?php
+
+echo $_REQUEST["data"];
+
+?>
+```
+Screenshot of output: 
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/badd70b8-b19e-452e-8d4c-8dc76dd6d532)
+
+Security Risks: There are a few risks such as URL manipulation which allows users to manipulate the URL to add unintended data. There is also a lack of input validation which could lead to errors or unwanted access from other users. 
+
+## Task 3. Understanding HTTP GET and POST requests.
+
+a. Briefly describe how you used Wireshark to examine the HTTP GET Request and Response for the echo.php page with your name in the data.
+I used Wireshark by running it as I did in the earlier tasks, navigating to my echo.php in the browser, and filtering by HTTP.
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/4ba1946d-9e20-4091-8123-082f0ae790bd)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/30ec03e1-48e1-4a27-b271-4f3da24f10b4)
+
+b. Summarize using curl to create an HTTP POST request with your name in the data.
+I install curl then used the command as instructed with my data input to receive the POST request. The two screenshots below show the request using curl and the request from the HTTP Stream.
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/88882d62-50fb-4854-904d-d5ed385d928e)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/246419f0-f9f5-4c3a-af8d-3900bada48b5)
+
+c. Compare the similarity/difference between HTTP POST Request and HTTP GET Request and between the two HTTP Responses above. 
+In the request method, GET adds data to the URL while the POST sends it in the request body. For data visbility, you can see the data in the URL in GET, but in POST the data is in the request body. GET is less secure while post is more secure. GET is for getting data while POST is for sending data to be processed.
+
+
+
+
+
+
 
 
 
