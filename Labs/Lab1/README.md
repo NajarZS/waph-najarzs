@@ -51,8 +51,12 @@ I created a new file called hellowrold.c that was a simple print statement. I co
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/b8a7df0e-03fa-4a32-a9cf-b6d94abe3f8a)
 
 b. Summarize and demonstrate with a screenshot that you can write another C CGI program and deploy it with a simple HTML template provided on https://www.w3schools.com/html/ with proper title, heading, and paragraph, i.e., the course and your information should be there.
-I copied the earlier helloworld file and repeated the exact steps as above. This time, I just changed the code up a bit following a template. Here is the source code from index.c as well as a screenshot of the output: 
- `#include <stdio.h>
+I copied the earlier helloworld file and repeated the exact steps as above. This time, I just changed the code up a bit following a template. Here is the source code from index.c as well as a screenshot of the output. 
+
+Included file `index.c`:
+
+```c
+#include <stdio.h>
 
 
 
@@ -84,7 +88,7 @@ int main(void) {
 
 }
 
-`
+
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ecb90d8a-4a84-4248-89fe-25fa9c0c8a84)
 
 
