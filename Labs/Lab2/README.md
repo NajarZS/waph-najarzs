@@ -61,6 +61,30 @@ In this part, I added CSS using inline, internal, and external as shown in the l
   <p><strong>Page Added With CSS</strong></p>
 </div>
 
+c. jQuery 
+
+In this part, I learned how to implement jQuery to add an Ajax GEt and Ajax Post reuqest button that print the response from the server. I followed the lecture exactly as listed and also learned how to use the network tool to look at the differences between the two. The main difference I noticed is that the post does not list what the input is in the name. Below is a screenshot of the new buttons and their network inspections. 
+
+<div style="text-align: center;">
+  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/636670cc-b34a-4644-9c59-1a2ab5e1464e" alt="New jQuery Buttons">
+  <p><strong>New jQuery Buttons</strong></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/a22411f4-95f8-48d7-a254-fcd1ea8bf494" alt="GET Network Inspection">
+  <p><strong>GET Network Inspection</strong></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/1f13a38a-931c-47f5-9f3d-4045c2588681" alt="POST Network Inspection">
+  <p><strong>POST Network Inspection</strong></p>
+</div>
+
+
+
+
+
+
 
 
 
