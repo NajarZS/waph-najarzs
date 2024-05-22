@@ -52,6 +52,15 @@ In this part I added the HTML code as shown in the lecture to add a server repso
   <p><strong>Network Analysis</strong></p>
 </div>
 
+b. CSS
+
+In this part, I added CSS using inline, internal, and external as shown in the lecture. The screenshot below shows the finished result. 
+
+<div style="text-align: center;">
+  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/22bd9242-e224-4695-a648-42812113d2a7" alt="Added CSS">
+  <p><strong>Page Added With CSS</strong></p>
+</div>
+
 
 
 
