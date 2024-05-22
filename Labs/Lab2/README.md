@@ -24,9 +24,10 @@ In this part, I followed the templates and codes in the lecture. It was not hard
 
 This part was a bit harder to replicate, but the lecture was very direct and informative on what to add and how to write the code. I liked added the clock feature and have never seen anything like it. It also showed how to display things with a click. Below is a screenshot of the finished product. 
 
-![Finished code for task 1](https://github.com/NajarZS/waph-najarzs/assets/169232307/5c41f4d4-fcc2-464b-a853-187d786aa85a)
-
-<p style="text-align:center;">Finished code for task 1</p>
+<div style="text-align: center;">
+  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/5c41f4d4-fcc2-464b-a853-187d786aa85a" alt="Finished code for task 1">
+  <p><strong>Finished code for task 1</strong></p>
+</div>
 
 
 
