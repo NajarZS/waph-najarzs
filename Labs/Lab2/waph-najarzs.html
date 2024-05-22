@@ -19,7 +19,7 @@
             cursor: pointer;
         }
         .round { border-radius: 8px; }
-        #response, #getResponse, #postResponse, #ajaxResponse { 
+        #response, #getResponse, #postResponse, #ajaxResponse, #jokeResponse { 
             background-color: #ff9800; 
             padding: 5px;
             margin-top: 10px;
@@ -187,7 +187,20 @@
                         });
                         $("#ajaxData").val("");
                     }
+
+                    // JokeAPI integration
+                    function getJoke() {
+                        $.get("https://v2.jokeapi.dev/joke/Programming?type=single", function(result) {
+                            console.log("From jokeAPI: " + JSON.stringify(result));  
+                            $("#jokeResponse").html(result.joke);  
+                        });
+                    }
                 </script>
+                
+                <hr>
+                <b>Random Programming Joke</b><br>
+                <button class="button round" onclick="getJoke()">Get a Joke</button>
+                <div id="jokeResponse">Joke will appear here</div>
             </div>
         </div>
     </div>
