@@ -19,7 +19,7 @@
     </div>
 
     <div id="headshot">
-        <img src="/home/zaid/waph-najarzs/Labs/Lab2/images.jpeg" alt="My headshot" width="50">
+        <img src="images.jpeg" alt="My headshot" width="50">
     </div>
 
     <div id="digit-clock"></div>
@@ -56,18 +56,30 @@
     <b>Interaction with forms</b>
     <div>
         <i>Form with an HTTP GET Request</i>
-        <form action="/echo.php" method="GET">
-            Your input: <input name="data" onkeyup="console.log('You have pressed a key')">
+        <form id="getForm" onsubmit="sendGetRequest(event)">
+            Your input: <input name="data" id="getData" onkeyup="console.log('You have pressed a key')">
             <input type="submit" value="Submit">
         </form>
+        <div id="getResponse">Response from server:</div>
     </div>
     
     <div>
         <i>Form with an HTTP POST Request</i>
-        <form action="/echo.php" method="POST" name="echo_post">
-            Your input: <input name="data" onkeyup="console.log('You have pressed a key')">
+        <form id="postForm" onsubmit="sendPostRequest(event)">
+            Your input: <input name="data" id="postData" onkeyup="console.log('You have pressed a key')">
             <input type="submit" value="Submit">
         </form>
+        <div id="postResponse">Response from server:</div>
+    </div>
+
+    <hr>
+    <b>Ajax requests</b>
+    <div>
+        <i>Ajax requests</i><br>
+        Your input: 
+        <input name="data" id="ajaxData" onkeypress="console.log('You have pressed a key')">
+        <input type="button" value="Submit" onclick="getEcho()">
+        <div id="ajaxResponse">Response from server:</div>
     </div>
 
     <hr>
@@ -76,5 +88,62 @@
     <div id="date" onclick="document.getElementById('date').innerHTML = Date()">Click here to show Date()</div>
 
     <script src="email.js"></script>
+    <script>
+        var shown = false;
+        function showhideEmail() {
+            if (shown) {
+                document.getElementById('email').innerHTML = "Show my email";
+                shown = false;
+            } else {
+                var myemail = "<a href='mailto:najarzs@ucmail.uc.edu'>najarzs@ucmail.uc.edu</a>";
+                document.getElementById('email').innerHTML = myemail;
+                shown = true;
+            }
+        }
+
+        function sendGetRequest(event) {
+            event.preventDefault();
+            var xhttp = new XMLHttpRequest();
+            var data = document.getElementById('getData').value;
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('getResponse').innerHTML = "Response from server: " + this.responseText;
+                }
+            };
+            xhttp.open("GET", "echo.php?data=" + data, true);
+            xhttp.send();
+        }
+
+        function sendPostRequest(event) {
+            event.preventDefault();
+            var xhttp = new XMLHttpRequest();
+            var data = document.getElementById('postData').value;
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('postResponse').innerHTML = "Response from server: " + this.responseText;
+                }
+            };
+            xhttp.open("POST", "echo.php", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("data=" + data);
+        }
+
+        function getEcho() {
+            var input = document.getElementById("ajaxData").value;
+            if (input.length == 0) {
+                return;
+            }
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log("Received data=" + xhttp.responseText);
+                    document.getElementById("ajaxResponse").innerText = "Response from server: " + xhttp.responseText;
+                }
+            };
+            xhttp.open("GET", "echo.php?data=" + input, true);
+            xhttp.send();
+            document.getElementById("ajaxData").value = "";
+        }
+    </script>
 </body>
 </html>
