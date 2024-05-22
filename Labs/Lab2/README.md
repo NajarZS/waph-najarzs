@@ -7,6 +7,7 @@ Email: najarzs@mail.uc.edu
 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/7efdc406-f5ce-4fbb-80fc-cfe00133c98c)
 
+Lab 2 Github Link: https://github.com/NajarZS/waph-najarzs/tree/main/Labs/Lab2
 
 ## Overview
 
