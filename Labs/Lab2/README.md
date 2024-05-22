@@ -80,6 +80,26 @@ In this part, I learned how to implement jQuery to add an Ajax GEt and Ajax Post
   <p><strong>POST Network Inspection</strong></p>
 </div>
 
+d. Web API integration
+
+i. Using Ajax on https://v2.jokeapi.dev/joke/Programming?type=single
+
+I used Ajax to use a joke api to display a random joke when the button is pressed. I followed the lecture, but this time I decided to turn it into a button that disiplays a random joke each time it is pressed. 
+
+<div style="text-align: center;">
+  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/a7a7e8ad-d2a9-4788-bac8-63bfa74a6107" alt="Joke API">
+  <p><strong>Joke API</strong></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/fa947860-1bc4-4ae7-9312-53136dc9850a" alt="Joke API Network">
+  <p><strong>Joke API Network </strong></p>
+</div>
+
+
+
+
+
 
 
 
