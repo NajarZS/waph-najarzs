@@ -5,7 +5,7 @@ Name: Zaid Najar
 Instructor: Dr. Phu Phung
 Email: najarzs@mail.uc.edu
 
-![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/7efdc406-f5ce-4fbb-80fc-cfe00133c98c)
+[![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/7efdc406-f5ce-4fbb-80fc-cfe00133c98c)](https://private-user-images.githubusercontent.com/169232307/332916820-7efdc406-f5ce-4fbb-80fc-cfe00133c98c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY0MTUxMjMsIm5iZiI6MTcxNjQxNDgyMywicGF0aCI6Ii8xNjkyMzIzMDcvMzMyOTE2ODIwLTdlZmRjNDA2LWY1Y2UtNGZiYi04MGZjLWNmZTAwMTMzYzk4Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyMlQyMTUzNDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04MTIxYTU4YzUwYjYyYzAwNmMxNjcyZTg3MTFlNTdhZWU5ZWZiMWZiY2YwNmI3M2UzYTJiNjkxMTdkZTcyM2M1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.KkBr_xzTTFJNVcUA1LYnh_42ldA2tX1KxMRDfHYd_Qs)
 
 Lab 2 Github Link: https://github.com/NajarZS/waph-najarzs/tree/main/Labs/Lab2
 
@@ -26,7 +26,7 @@ b. Simple Javascript
 This part was a bit harder to replicate, but the lecture was very direct and informative on what to add and how to write the code. I liked added the clock feature and have never seen anything like it. It also showed how to display things with a click. Below is a screenshot of the finished product. 
 
 <div style="text-align: center;">
-  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/5c41f4d4-fcc2-464b-a853-187d786aa85a" alt="Finished code for task 1">
+  <img src="https://private-user-images.githubusercontent.com/169232307/332918040-5c41f4d4-fcc2-464b-a853-187d786aa85a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY0MTUxMjMsIm5iZiI6MTcxNjQxNDgyMywicGF0aCI6Ii8xNjkyMzIzMDcvMzMyOTE4MDQwLTVjNDFmNGQ0LWZjYzItNDY0Yi1hODUzLTE4N2Q3ODZhYTg1YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyMlQyMTUzNDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NWUyMmMwMGJlMzY5YjYyNzk5YTI4NTE5NWYxYzJmMmQ4MDJkNTkzYjhlOGNlNWI5ZjgxZWU2MmQzYTFjMjQ1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Unteja0KYu9qZZNBXUaGoDjGej13vhnhkVG6l3WgZTs" alt="Finished code for task 1">
   <p><strong>Finished code for task 1</strong></p>
 </div>
 
@@ -39,7 +39,7 @@ a. Ajax
 In this part I added the HTML code as shown in the lecture to add a server repsonse feature on the page. When entering a user input and clicking submit, it will display what the user inputted right below it. The console and network also show the response. I then added another one but this time without a form. An Ajax request works by consturcting an XMLHttpRequest when the user interacts with the webpage. The server then responds to the request using the open and send methods and then using the echo.php to echo back the data received. The onreadystatechange will check if the request has been completed and successfully. When this is all done, the page is then updated with the response data without ever reloading the page. There are 3 screenshots below for this part. 
 
 <div style="text-align: center;">
-  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/5841d2a4-a231-4cec-8f05-0294de878f05" alt="Ajax Requests">
+  <img src="https://private-user-images.githubusercontent.com/169232307/332946033-5841d2a4-a231-4cec-8f05-0294de878f05.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY0MTUxMjMsIm5iZiI6MTcxNjQxNDgyMywicGF0aCI6Ii8xNjkyMzIzMDcvMzMyOTQ2MDMzLTU4NDFkMmE0LWEyMzEtNGNlYy04ZjA1LTAyOTRkZTg3OGYwNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyMlQyMTUzNDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNmUwNjQyYzVmYjYwMmU5ZTU2MzVhMDQ1MTU4NmU2MGRhNTE0YjBjYmUyNTUxYWY3NzUwZGQ5Y2I3MjhhOTlmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.AhqgADslslUqcxvIvnuZob07U5zpWWhrLfwIqf_d_88" alt="Ajax Requests">
   <p><strong>Ajax Requests</strong></p>
 </div>
 
