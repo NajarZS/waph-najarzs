@@ -96,6 +96,22 @@ I used Ajax to use a joke api to display a random joke when the button is presse
   <p><strong>Joke API Network </strong></p>
 </div>
 
+ii. Using the fetch API on https://api.agify.io/?name=input
+
+I added HTML and JS code using the fetch() method as instructured to use an API that takes in a name from the user and guesses the age. This showed me how to use the fetch() method and expanded more on API use. 
+
+<div style="text-align: center;">
+  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/9401cd74-8100-4966-8176-42e0a6c6523f" alt="Age Guesser">
+  <p><strong>Age Guesser </strong></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/17c8f6e8-0a9c-4fa3-8ab2-15f0848d6bd0" alt="Age Guesser Network">
+  <p><strong>Age Guesser Network </strong></p>
+</div>
+
+
+
 
 
 
