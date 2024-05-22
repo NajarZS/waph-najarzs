@@ -26,7 +26,7 @@ b. Simple Javascript
 This part was a bit harder to replicate, but the lecture was very direct and informative on what to add and how to write the code. I liked added the clock feature and have never seen anything like it. It also showed how to display things with a click. Below is a screenshot of the finished product. 
 
 <div style="text-align: center;">
-  <img src="https://github.com/NajarZS/waph-najarzs/blob/main/Labs/Lab2/screenshots/332918040-5c41f4d4-fcc2-464b-a853-187d786aa85a.png?raw=true" alt="Finished code for task 1">
+  <img src="https://raw.githubusercontent.com/NajarZS/waph-najarzs/main/Labs/Lab2/screenshots/332918040-5c41f4d4-fcc2-464b-a853-187d786aa85a.png" alt="Finished code for task 1">
   <p><strong>Finished code for task 1</strong></p>
 </div>
 
