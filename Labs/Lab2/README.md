@@ -5,7 +5,8 @@ Name: Zaid Najar
 Instructor: Dr. Phu Phung
 Email: najarzs@mail.uc.edu
 
-https://github.com/NajarZS/waph-najarzs/blob/main/Labs/Lab2/images.jpeg?raw=true
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/7efdc406-f5ce-4fbb-80fc-cfe00133c98c)
+
 
 ## Overview
 
