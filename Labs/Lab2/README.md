@@ -26,10 +26,9 @@ b. Simple Javascript
 This part was a bit harder to replicate, but the lecture was very direct and informative on what to add and how to write the code. I liked added the clock feature and have never seen anything like it. It also showed how to display things with a click. Below is a screenshot of the finished product. 
 
 <div style="text-align: center;">
-  [![image](https://raw.githubusercontent.com/NajarZS/waph-najarzs/main/Labs/Lab2/screenshots/332918040-5c41f4d4-fcc2-464b-a853-187d786aa85a.png)
+  <img src="https://private-user-images.githubusercontent.com/169232307/332918040-5c41f4d4-fcc2-464b-a853-187d786aa85a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY0MTUxMjMsIm5iZiI6MTcxNjQxNDgyMywicGF0aCI6Ii8xNjkyMzIzMDcvMzMyOTE4MDQwLTVjNDFmNGQ0LWZjYzItNDY0Yi1hODUzLTE4N2Q3ODZhYTg1YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyMlQyMTUzNDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NWUyMmMwMGJlMzY5YjYyNzk5YTI4NTE5NWYxYzJmMmQ4MDJkNTkzYjhlOGNlNWI5ZjgxZWU2MmQzYTFjMjQ1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Unteja0KYu9qZZNBXUaGoDjGej13vhnhkVG6l3WgZTs" alt="Finished code for task 1">
   <p><strong>Finished code for task 1</strong></p>
 </div>
-
 ## Task 2: Ajax, CSS, jQuery, and Web API integration
 
 This task will go over incorporating Ajax, CSS, jQuery, and Web API integration 
