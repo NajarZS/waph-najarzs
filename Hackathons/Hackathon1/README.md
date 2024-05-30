@@ -36,7 +36,6 @@ Level 4: For this part, I did something similar to level 3, but I used an onload
 Level 5: For this part, I did something similar to part 4, but ths time I did an "onfocus" event handler that triggers a confirm dialog. It looks like this: (<input type='text' onfocus='window["confirm"]("Zaid")' autofocus>). This bypasses the filters by blocking the 'script' and 'alert' keywords and indirectly displays the dialog. The code is in level5.html. Here is the outcome: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/16f744d9-7920-4ae0-9dd2-76c1527650db)
 
-Level 6: 
 
 
 
