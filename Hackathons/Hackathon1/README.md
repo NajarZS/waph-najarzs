@@ -27,4 +27,9 @@ Level 1: Level 1 was the same as level 0, but instead of an input field, I just 
 Level 2: For level 2, I created an HTML form with an XSS payload (the same as before). It used JavaScript to send a POST request to the target URL. The code is found in the repository under level2.html. Then on the page, I press submit and this is the result: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/5ca4c2ab-e303-4080-a8e2-47bd4159c312)
 
+Level 3: For level 3, I created another HTML form that sends a POST request, but this time I used an image tag with an "onerror" and inside of it is the alert with my name in it. The code is found in level3.html. Here is the result: 
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/8d45c203-0f36-48e6-a9e8-5616c0b720a5)
+
+Level 4:
+
 
