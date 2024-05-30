@@ -30,6 +30,13 @@ Level 2: For level 2, I created an HTML form with an XSS payload (the same as be
 Level 3: For level 3, I created another HTML form that sends a POST request, but this time I used an image tag with an "onerror" and inside of it is the alert with my name in it. The code is found in level3.html. Here is the result: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/8d45c203-0f36-48e6-a9e8-5616c0b720a5)
 
-Level 4:
+Level 4: For this part, I did something similar to level 3, but I used an onload event to put an alert out ((<svg onload=alert("Zaid")></svg>)). This bypassed the filters. Here is the result and the code is in level4.html. 
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/5e6b86e6-24bc-4f67-8337-8100ab2b9093)
+
+Level 5: For this part, I did something similar to part 4, but ths time I did an "onfocus" event handler that triggers a confirm dialog. It looks like this: (<input type='text' onfocus='window["confirm"]("Zaid")' autofocus>). This bypasses the filters by blocking the 'script' and 'alert' keywords and indirectly displays the dialog. The code is in level5.html. Here is the outcome: 
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/16f744d9-7920-4ae0-9dd2-76c1527650db)
+
+Level 6: 
+
 
 
