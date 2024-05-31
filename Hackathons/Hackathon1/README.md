@@ -36,6 +36,29 @@ Level 4: For this part, I did something similar to level 3, but I used an onload
 Level 5: For this part, I did something similar to part 4, but ths time I did an "onfocus" event handler that triggers a confirm dialog. It looks like this: (<input type='text' onfocus='window["confirm"]("Zaid")' autofocus>). This bypasses the filters by blocking the 'script' and 'alert' keywords and indirectly displays the dialog. The code is in level5.html. Here is the outcome: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/16f744d9-7920-4ae0-9dd2-76c1527650db)
 
+## Task 2: Defense 
+
+Input Validation Implementation: for this part, I simply went back to my html file from lab 2 and my echo.php file from lab 1 and added simple validations to make sure it is not null, empty, or undefined. I did this by adding a helper function named "isValidInput" that checks if the input is null, undefined, or empty. This enhances security and makes the code more effecient for both the developers and users. Here is the code of the function:
+```javascript
+function isValidInput(data) {
+return data !== null && data !== undefined && data.trim() !== "";
+}
+```
+For the echo.php, I just added a simple if statement that does the same thing. Here it is below: 
+
+```php
+
+<?php
+if (isset($_REQUEST['data']) && $_REQUEST['data'] !== null && trim($_REQUEST['data']) !== '') {
+    echo $_REQUEST['data'];
+} else {
+    echo "Input cannot be empty, null, or undefined";
+}
+?>
+```
+
+
+
 
 
 
