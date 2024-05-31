@@ -57,6 +57,18 @@ if (isset($_REQUEST['data']) && $_REQUEST['data'] !== null && trim($_REQUEST['da
 ?>
 ```
 
+Encoding: For this part, I added basic encoding to the same functions and files that I added the validation to. For the html file, I added another function called encodeInput which turns characters into HTML entities. this is the function (it is the same as the one from the lecture): 
+
+```javascript
+function encodeInput(input) {
+const encoded = document.createElement('div');
+encoded.innerText = input;
+return encoded.innerHTML;
+}
+```
+
+For the echo.php, I just did what the lecture said and added htmlentities. This does the same thing and turns characters into their htmlentities. 
+
 
 
 
