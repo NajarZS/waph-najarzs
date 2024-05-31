@@ -131,6 +131,12 @@
                         return data !== null && data !== undefined && data.trim() !== "";
                     }
 
+                    function encodeInput(input) {
+                        const encoded = document.createElement('div');
+                        encoded.innerText = input;
+                        return encoded.innerHTML;
+                    }
+
                     function sendGetRequest(event) {
                         event.preventDefault();
                         var data = document.getElementById('getData').value;
@@ -141,10 +147,10 @@
                         var xhttp = new XMLHttpRequest();
                         xhttp.onreadystatechange = function() {
                             if (this.readyState == 4 && this.status == 200) {
-                                document.getElementById('getResponse').innerHTML = "Response from server: " + this.responseText;
+                                document.getElementById('getResponse').innerHTML = "Response from server: " + encodeInput(this.responseText);
                             }
                         };
-                        xhttp.open("GET", "echo.php?data=" + data, true);
+                        xhttp.open("GET", "echo.php?data=" + encodeInput(data), true);
                         xhttp.send();
                     }
 
@@ -158,12 +164,12 @@
                         var xhttp = new XMLHttpRequest();
                         xhttp.onreadystatechange = function() {
                             if (this.readyState == 4 && this.status == 200) {
-                                document.getElementById('postResponse').innerHTML = "Response from server: " + this.responseText;
+                                document.getElementById('postResponse').innerHTML = "Response from server: " + encodeInput(this.responseText);
                             }
                         };
                         xhttp.open("POST", "echo.php", true);
                         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                        xhttp.send("data=" + data);
+                        xhttp.send("data=" + encodeInput(data));
                     }
 
                     function getEcho() {
@@ -176,10 +182,10 @@
                         xhttp.onreadystatechange = function() {
                             if (this.readyState == 4 && this.status == 200) {
                                 console.log("Received data=" + xhttp.responseText);
-                                document.getElementById("ajaxResponse").innerText = "Response from server: " + xhttp.responseText;
+                                document.getElementById("ajaxResponse").innerText = "Response from server: " + encodeInput(this.responseText);
                             }
                         };
-                        xhttp.open("GET", "echo.php?data=" + input, true);
+                        xhttp.open("GET", "echo.php?data=" + encodeInput(input), true);
                         xhttp.send();
                         document.getElementById("ajaxData").value = "";
                     }
@@ -190,8 +196,8 @@
                             alert("Input cannot be empty, null, or undefined");
                             return;
                         }
-                        $.get("echo.php?data=" + input, function(result) {
-                            $("#ajaxResponse").html("Response from server: " + result);
+                        $.get("echo.php?data=" + encodeInput(input), function(result) {
+                            $("#ajaxResponse").html("Response from server: " + encodeInput(result));
                         });
                         $("#ajaxData").val("");
                     }
@@ -202,8 +208,8 @@
                             alert("Input cannot be empty, null, or undefined");
                             return;
                         }
-                        $.post("echo.php", { data: input }, function(result) {
-                            $("#ajaxResponse").html("Response from server: " + result);
+                        $.post("echo.php", { data: encodeInput(input) }, function(result) {
+                            $("#ajaxResponse").html("Response from server: " + encodeInput(result));
                         });
                         $("#ajaxData").val("");
                     }
@@ -211,7 +217,7 @@
                     function getJoke() {
                         $.get("https://v2.jokeapi.dev/joke/Programming?type=single", function(result) {
                             console.log("From jokeAPI: " + JSON.stringify(result));  
-                            $("#jokeResponse").html(result.joke);  
+                            $("#jokeResponse").html(encodeInput(result.joke));  
                         });
                     }
 
@@ -220,9 +226,9 @@
                             alert("Input cannot be empty, null, or undefined");
                             return;
                         }
-                        const response = await fetch(`https://api.agify.io/?name=${name}`);
+                        const response = await fetch(`https://api.agify.io/?name=${encodeInput(name)}`);
                         const result = await response.json();
-                        $("#ajaxResponse").html(`Hi ${name}, your age should be ${result.age}`);
+                        $("#ajaxResponse").html(`Hi ${encodeInput(name)}, your age should be ${result.age}`);
                     }
                 </script>
                 
