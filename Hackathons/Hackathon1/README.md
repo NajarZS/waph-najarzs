@@ -31,7 +31,7 @@ echo $_POST['input'];
 ?>
 ```
   Then on the page, I press submit and this is the result: 
-![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/7e7dc5f0-3d0d-4d87-b709-8f2d51046953)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/e56bf876-1072-472b-a8be-3471ea660af2)
 
 Level 3: For level 3, I created another HTML form that sends a POST request, but this time I used an image tag with an "onerror" and inside of it is the alert with my name in it. The code is found in level3.html. The source code for level 3 probably looks like (It checks if an input field is set, and if not then it returns an error message. It also filters out the script tags). 
 ```php
@@ -47,7 +47,7 @@ if (isset($_POST['input'])) {
 
 ```
 Here is the result: 
-![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/1b44a28c-c700-46c8-b30b-6d70dcf6efcc)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/21b2dc93-a4f5-4b34-8bfc-8d1764f6cdad)
 
 Level 4: For this part, I did something similar to level 3, but I used an onload event to put an alert out ((<svg onload=alert("Zaid")></svg>)). This bypassed the filters. The source code is probably similar to leevel 3, but it filters the img tag as well like this: 
 ```php
@@ -62,7 +62,7 @@ if (isset($_POST['input'])) {
 ?>
 ```
 Here is the result and the code is in level4.html. 
-![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/3a95d461-87c0-4011-b8cb-667b394caa87)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/4d8db2a2-352f-43a5-83ae-7219936e71ce)
 
 Level 5: For this part, I did something similar to part 4, but ths time I did an "onfocus" event handler that triggers a confirm dialog. It looks like this: (<input type='text' onfocus='window["confirm"]("Zaid")' autofocus>). This bypasses the filters by blocking the 'script' and 'alert' keywords and indirectly displays the dialog. The source code probably looks like this (alert is filtered out)
 ```php
@@ -81,9 +81,7 @@ if (isset($_POST['input'])) {
 ?>
 ```
 as well The code is in level5.html Here is the outcome: 
-![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/16f744d9-7920-4ae0-9dd2-76c1527650db)
-![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/98df0413-f701-48c8-873c-f8d83486dd8f)
-
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/c207ee01-5149-42f3-aa10-c0cdb009dce0)
 
 Level 6: I have not been able to figure out level 6, but I'm assuming the source code is just a simple script but with htmlentities used like this one 
 ```php
