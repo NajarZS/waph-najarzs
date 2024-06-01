@@ -24,13 +24,44 @@ Level 0: This one was simple because it was like lab 1. I just added a simple al
 Level 1: Level 1 was the same as level 0, but instead of an input field, I just had to add it to the url. I just added ?input=<script>alert(%27Zaid%27)</script> to the end of the url and I got this:
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/eb13551a-2e83-45c1-9e0d-38a6c29be4ef)
 
-Level 2: For level 2, I created an HTML form with an XSS payload (the same as before). It used JavaScript to send a POST request to the target URL. The code is found in the repository under level2.html. Then on the page, I press submit and this is the result: 
+Level 2: For level 2, I created an HTML form with an XSS payload (the same as before). It used JavaScript to send a POST request to the target URL. The code is found in the repository under level2.html. The source code of this level probably looks like (It is a simple echo post):
+```php
+<?php
+echo $_POST['input'];
+?>
+```
+  Then on the page, I press submit and this is the result: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/5ca4c2ab-e303-4080-a8e2-47bd4159c312)
 
-Level 3: For level 3, I created another HTML form that sends a POST request, but this time I used an image tag with an "onerror" and inside of it is the alert with my name in it. The code is found in level3.html. Here is the result: 
+Level 3: For level 3, I created another HTML form that sends a POST request, but this time I used an image tag with an "onerror" and inside of it is the alert with my name in it. The code is found in level3.html. The source code for level 3 probably looks like (It checks if an input field is set, and if not then it returns an error message. It also filters out the script tags). 
+```php
+<?php
+if (isset($_POST['input'])) {
+    $input = $_POST['input'];
+    $input = preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', '', $input);
+    echo $input;
+} else {
+    echo json_encode(array("error" => "Please provide 'input' field"));
+}
+?>
+
+```
+Here is the result: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/8d45c203-0f36-48e6-a9e8-5616c0b720a5)
 
-Level 4: For this part, I did something similar to level 3, but I used an onload event to put an alert out ((<svg onload=alert("Zaid")></svg>)). This bypassed the filters. Here is the result and the code is in level4.html. 
+Level 4: For this part, I did something similar to level 3, but I used an onload event to put an alert out ((<svg onload=alert("Zaid")></svg>)). This bypassed the filters. The source code is probably similar to leevel 3, but it filters the img tag as well like this: 
+```php
+<?php
+if (isset($_POST['input'])) {
+    $input = $_POST['input'];
+    $input = preg_replace('/<(script|img)\b[^>]*>(.*?)<\/(script|img)>/is', '', $input);
+    echo $input;
+} else {
+    echo json_encode(array("error" => "Please provide 'input' field"));
+}
+?>
+```
+Here is the result and the code is in level4.html. 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/5e6b86e6-24bc-4f67-8337-8100ab2b9093)
 
 Level 5: For this part, I did something similar to part 4, but ths time I did an "onfocus" event handler that triggers a confirm dialog. It looks like this: (<input type='text' onfocus='window["confirm"]("Zaid")' autofocus>). This bypasses the filters by blocking the 'script' and 'alert' keywords and indirectly displays the dialog. The code is in level5.html. Here is the outcome: 
