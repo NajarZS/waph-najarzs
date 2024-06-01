@@ -67,13 +67,10 @@ Here is the result and the code is in level4.html.
 Level 5: For this part, I did something similar to part 4, but ths time I did an "onfocus" event handler that triggers a confirm dialog. It looks like this: (<input type='text' onfocus='window["confirm"]("Zaid")' autofocus>). This bypasses the filters by blocking the 'script' and 'alert' keywords and indirectly displays the dialog. The source code probably looks like this (alert is filtered out)
 ```php
 <?php
-// Ensure 'input' field is provided
 if (isset($_POST['input'])) {
     $input = $_POST['input'];
-    // Filter out <script> tags and alert function
     $input = preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', '', $input);
     $input = preg_replace('/alert\s*\(/is', '', $input);
-    // Echo the sanitized input
     echo $input;
 } else {
     echo json_encode(array("error" => "Please provide 'input' field"));
