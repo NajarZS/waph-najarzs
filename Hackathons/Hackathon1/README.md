@@ -64,8 +64,31 @@ if (isset($_POST['input'])) {
 Here is the result and the code is in level4.html. 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/5e6b86e6-24bc-4f67-8337-8100ab2b9093)
 
-Level 5: For this part, I did something similar to part 4, but ths time I did an "onfocus" event handler that triggers a confirm dialog. It looks like this: (<input type='text' onfocus='window["confirm"]("Zaid")' autofocus>). This bypasses the filters by blocking the 'script' and 'alert' keywords and indirectly displays the dialog. The code is in level5.html. Here is the outcome: 
+Level 5: For this part, I did something similar to part 4, but ths time I did an "onfocus" event handler that triggers a confirm dialog. It looks like this: (<input type='text' onfocus='window["confirm"]("Zaid")' autofocus>). This bypasses the filters by blocking the 'script' and 'alert' keywords and indirectly displays the dialog. The source code probably looks like this (alert is filtered out)
+```php
+<?php
+// Ensure 'input' field is provided
+if (isset($_POST['input'])) {
+    $input = $_POST['input'];
+    // Filter out <script> tags and alert function
+    $input = preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', '', $input);
+    $input = preg_replace('/alert\s*\(/is', '', $input);
+    // Echo the sanitized input
+    echo $input;
+} else {
+    echo json_encode(array("error" => "Please provide 'input' field"));
+}
+?>
+```
+as well The code is in level5.html Here is the outcome: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/16f744d9-7920-4ae0-9dd2-76c1527650db)
+
+Level 6: I have not been able to figure out level 6, but I'm assuming the source code is just a simple script but with htmlentities used like this one 
+```php
+<?php
+echo htmlentities($_REQUEST['data']);
+?>
+```
 
 ## Task 2: Defense 
 
