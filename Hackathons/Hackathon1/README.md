@@ -19,7 +19,7 @@ This is the first hackathon where I learned how to attack and defend on a site. 
 ## Task 1: Attack
 
 Level 0: This one was simple because it was like lab 1. I just added a simple alert script. Here is the script I added: <script>alert('Zaid');</script> and here is the result: 
-<img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/f6a2ba2b-8b4e-4b7f-a3e3-280d91065de5" width="300">
+<img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/f6a2ba2b-8b4e-4b7f-a3e3-280d91065de5" width="500">
 
 Level 1: Level 1 was the same as level 0, but instead of an input field, I just had to add it to the url. I just added ?input=<script>alert(%27Zaid%27)</script> to the end of the url and I got this:
 <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/ebb96ce4-e6cf-4858-a117-f30b9199d06a" width="300">
