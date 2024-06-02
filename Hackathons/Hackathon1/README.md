@@ -80,12 +80,17 @@ if (isset($_POST['input'])) {
 as well The code is in level5.html Here is the outcome: 
 <img src="https://github.com/NajarZS/waph-najarzs/assets/169232307/c207ee01-5149-42f3-aa10-c0cdb009dce0" width="600">
 
-Level 6: I have not been able to figure out level 6, but I'm assuming the source code is just a simple script but with htmlentities used like this one 
+Level 6: For level 6, I added a simple script to alert, but this time I did it while inspecting element. I added <form action="/xss/level6/echo.php/%22%3E%3Cscript%3Ealert(%27Zaid%27)%3C/script%3E" method="POST"> to the url because the vunerbility is found there (the url is /xss/level6/echo.php instead of just echo.php.  The source code probably just has a simple html entity function as seen below.
+ 
 ```php
 <?php
 echo htmlentities($_REQUEST['data']);
 ?>
 ```
+
+Here is the result: 
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/822ba775-35be-43f6-9fc8-f1979840f6bd)
+
 
 ## Task 2: Defense 
 
