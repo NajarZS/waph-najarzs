@@ -43,4 +43,46 @@ INSERT INTO users(username, password) VALUES ('Zaid', MD5('zaid123'));
 Here is the outcome: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/d1e9b423-ea00-4eb1-8845-7b7c4734670a)
 
+## Task b. A Simple (Insecure) Login System with PHP/MySQL 
+
+In this part, I downloaded mysqli and modified a basic login form to connect to my database and accept my username and password. I modified form.php and index.php and added a new function called checklogin_mysql. I followed the instructions from the lecture and it was able to log me in. The code for the files is found in the repository. 
+
+New function:
+
+``` php
+function checklogin_mysql($username, $password) {
+
+   		 $mysqli = new mysqli('localhost', 'Zaid', 'zaid123', 'waph');
+
+
+
+  		  if ($mysqli->connect_errno) {
+
+    		     printf("Database connection failed: %s\n", $mysqli->connect_error);
+
+       		     exit();
+
+                  }               
+
+  		  $sql = "SELECT * FROM users WHERE username='" . $username . "'";
+
+    		  $sql = $sql . " AND password = md5('" . $password . "')";
+
+                  $result = $mysqli->query($sql);
+
+                  if($result->num_rows == 1)
+
+                      return TRUE;
+
+                  return FALSE;
+
+}
+```
+Result: ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ec91901d-2192-408c-929c-16295b2a2182)
+        ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/eefb72f7-5402-4f3c-9afe-d4a95b9e3e01)
+
+
+
+
+
 
