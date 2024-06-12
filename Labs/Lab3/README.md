@@ -83,7 +83,11 @@ Result: ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ec9190
 
 ## Task c. Performing XSS and SQL Injection Attacks
 
-In this part, we learn basic attacks that act as a preliminary for the hackathon. First we did an XSS attack. This uses the username field and javacript to make the page peform an action. The input is Zaid' #<script>alert(document.cookie)</script> and this is the result: 
+In this part, we learn basic attacks that act as a preliminary for the hackathon. First we did an SQL injection. This works by just putting a smiple sql command in the username to bypass a password. For example, I put: zaid' OR '1'='1. This constructs a query that allows me to bypass without using a password. Here is the result: ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/891a9e37-b0a4-4f86-b4c3-ec1ae6db1fca)
+Payload: ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/9fdd68fc-8623-49e1-abf4-e7c7b90bd594)
+This happens because the inputs are directly put into SQL with no sanitization. This allows anyone to manipulate the query structure and exectute code. 
+
+Then we did an XSS attack.. This uses the username field and javacript to make the page peform an action. The input is Zaid' #<script>alert(document.cookie)</script> and this is the result: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/c9933556-40e1-45af-acc6-eae741b0fd93)
 
 
