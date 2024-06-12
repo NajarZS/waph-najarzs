@@ -81,6 +81,13 @@ function checklogin_mysql($username, $password) {
 Result: ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ec91901d-2192-408c-929c-16295b2a2182)
         ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/eefb72f7-5402-4f3c-9afe-d4a95b9e3e01)
 
+## Task c. Performing XSS and SQL Injection Attacks
+
+In this part, we learn basic attacks that act as a preliminary for the hackathon. First we did an XSS attack. This uses the username field and javacript to make the page peform an action. The input is Zaid' #<script>alert(document.cookie)</script> and this is the result: 
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/c9933556-40e1-45af-acc6-eae741b0fd93)
+
+
+
 
 
 
