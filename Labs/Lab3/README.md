@@ -90,6 +90,38 @@ This happens because the inputs are directly put into SQL with no sanitization. 
 Then we did an XSS attack.. This uses the username field and javacript to make the page peform an action. The input is Zaid' #<script>alert(document.cookie)</script> and this is the result: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/c9933556-40e1-45af-acc6-eae741b0fd93)
 
+## Task d. Prepared Statement Implementation
+
+In this part, I made a new index.php that is a copy of the original but with a prepared statement. This makes the login system a lot more secure and does not allow XSS or SQl attacks. Here is the new part I added (from the lecture): 
+
+``` php
+$prepared_sql = "SELECT * FROM users WHERE username= ? AND password=md5(?)";
+
+    $stmt = $mysqli->prepare($prepared_sql);
+
+    $stmt->bind_param("ss", $username, $password);
+
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+
+
+
+    if ($result->num_rows == 1) {
+
+        return TRUE;
+
+    }
+
+    return FALSE;
+```
+Here is a look at the payload after attempting an attack: 
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/955cdd9a-ecc9-4448-951d-85bcbfd72dc4)
+
+Prepared statements prevent SQL injection attacks by separating the SQL code from the data input. This is done by using a placehplder for the user input. This allows the database to read this as data and not code. If the username or password is empty, it still does not allow a successful login, but there should be an input validation to check for empty fields. If there are errors to the database, thenthe code might not be prepared for that and the application may crash or expose important error messages or other info. This can be solved by adding error handling and loggging to manage the database errors. The username is not sensitive. I think this is a good thing, but if we want better case handlings, you can add comparasions or normalization.
+
+
+
 
 
 
