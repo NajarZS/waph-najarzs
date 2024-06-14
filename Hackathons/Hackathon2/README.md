@@ -26,7 +26,7 @@ This step is a lot more complicated with a lot more steps. The page includes som
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/2e6fe34f-c7a6-429b-82e1-44af3fb06a63)
 
 Then I need to return a command that returns the database information. This command is only possible if I find out how many columns there are. If I use the union select command and guess and check while incrementing the number of columns, I can find out how many columns there are if the number I am on did not return an error. Here is an incorrect column guess:
-![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ea2a6138-c8a1-49fe-9210-06ff84c041ef
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ea2a6138-c8a1-49fe-9210-06ff84c041ef)
 
 And here is a correct one: 
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/8f228289-9a28-4159-b53a-ed68ae92c10a)
