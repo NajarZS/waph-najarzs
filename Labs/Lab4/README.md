@@ -44,7 +44,8 @@ a. ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/03637704-e6
 
 b. ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/e9cacc12-d23e-4225-b5b3-f2135cbe7282)
 
-c. 
+c. ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/b1166ffb-95b3-40a3-b3e6-b3f670d2c06e)
+
 
 
 
