@@ -22,8 +22,16 @@ a: ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/c809595c-ed
 b. ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/638d7ab1-e2c6-4987-816d-2cbcb46e1758)
 ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/d6499aa0-3747-47a6-90bc-c03c6b01aa1a)
 
-
 The session handhsaking proccess starts with the client making a request to the server with no sessioninfo. The server responds by setting a session cookie in the browser. This cookie is used in the following requests. This allows the client to recognize the user and maintain the same session state. This keeps it continuous. 
+
+c.![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ab087e1b-2319-4166-8bf9-4ade73ffa634)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ac3ce79c-449e-4cad-b3df-104fe94df306)
+
+## Task 2: Insecure Session Authentication
+
+a: 
+
+
 
 
 
