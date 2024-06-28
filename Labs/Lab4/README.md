@@ -29,7 +29,34 @@ c.![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/ab087e1b-231
 
 ## Task 2: Insecure Session Authentication
 
-a: 
+a: ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/3c2d28f5-a42a-42d6-b157-3cd3d88d3477)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/339f623d-6953-4057-90d4-362a13b837d8)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/06f21337-eaa3-462d-98ad-2a4246df7cec)
+
+b. ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/d2cb1868-2bde-4216-a715-6f3cf8182dc4)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/3631491e-d9d9-4bb6-a339-7ac22bbf11f9)
+I copied the session value from firefox and pasted it into chrome. Now when I navigate directly to index.php it still has me logged in even in incognito mode.
+
+## Task 3: Securing sessions and session authentication
+
+a. ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/03637704-e6ce-45e2-a2e6-bd791989c459)
+![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/bc7dbe35-a0ba-4a73-aa6f-5fe6625fd993)
+
+b. ![image](https://github.com/NajarZS/waph-najarzs/assets/169232307/e9cacc12-d23e-4225-b5b3-f2135cbe7282)
+
+c. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
